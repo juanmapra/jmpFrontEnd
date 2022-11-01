@@ -1,0 +1,32 @@
+<div class="logo">
+    <a href="https://www.argentina.gob.ar/economia/conocimiento/argentina-programa" target=”_blank” ><img src="../../../assets/logoap.png" id="logoap"></a>
+    <a href="" class="btn btn-outline-light" id="home"><i class="bi bi-house-fill"></i></a>
+</div>
+<section class="vh-100">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="card shadow-2-strong" style="border-radius: 1rem;">
+            <div class="card-body p-5 text-center">
+  
+              <h3 class="mb-5">Inicio de sesion</h3>
+  
+              <form #F="ngForm" (ngSubmit)="onLogin()" novalidate>
+                <div class="form-outline mb-4">
+                  <input type="email" id="nombreUsuario" name="nombreUsuario" class="form-control form-control-lg" [(ngModel)]="nombreUsuario" required/>
+                  <label class="form-label" for="nombreUsuario">Usuario</label>
+                </div>
+    
+                <div class="form-outline mb-4">
+                  <input type="password" id="password" name="password" class="form-control form-control-lg" [(ngModel)]="password" required />
+                  <label class="form-label" for="password">Contraseña</label>
+                </div>
+    
+                <button class="btn btn-primary btn-lg btn-block" type="submit">Acceder</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

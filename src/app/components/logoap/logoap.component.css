@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logoap{
+    width: 150px;
+    filter:none
+}
+
+.btn{
+    float:right;
+    margin-right: 10px;
+    font-size: 20px;
+    margin-top: 3px;
+}
+
+#github{
+    filter: invert(1);
+    width: 50px;
+    margin-bottom: 5px;
+}
+
+#linkedin{
+    filter: invert(1);
+    width: 45px;
+    margin-bottom: 5px;
+}

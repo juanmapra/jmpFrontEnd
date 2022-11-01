@@ -1,0 +1,18 @@
+<div class="row">
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+        <img src="{{persona.img}}}" class="img-fluid" id="profilepic">
+    </div>
+    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+        <p id="fullname">{{persona.nombre}}  {{persona.apellido}}</p>
+        <p>Full Stack Developer Jr.</p>
+    </div>
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+        <span id="description">
+            <h1>Acerda de mi</h1>
+            <p>{{persona.descripcion}}</p>
+        </span>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-2">
+        <button class="btn btn-success" routerLink="/editaboutme/{{persona.id}}" *ngIf="isLogged"><i class="bi bi-pencil"></i></button>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+#logoap{
+    width: 150px;
+    height: auto;
+}
+
+#home{
+    float:right;
+    margin-top: 20px;
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+.logo{
+    background-color: rgb(0, 174, 255);
+}
+
+.vh-100{
+    background: lightgrey;
+    padding-bottom: 10%;
+}

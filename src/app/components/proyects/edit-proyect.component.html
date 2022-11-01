@@ -1,0 +1,30 @@
+<div class="logo">
+    <a href="https://www.argentina.gob.ar/economia/conocimiento/argentina-programa" target=”_blank” ><img src="../../../assets/logoap.png" id="logoap"></a>
+    <a href="" class="btn btn-outline-light" id="home"><i class="bi bi-house-fill"></i></a>
+</div>
+<section class="vh-100">
+    <div class="container py-5 h-100" *ngIf="proyect">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="card shadow-2-strong" style="border-radius: 1rem;">
+            <div class="card-body p-5">
+  
+              <form #F="ngForm" (ngSubmit)="onUpdate()" novalidate>
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="nombrePryct">Nombre del proyecto:</label>
+                  <input type="text" id="nombrePryct" name="nombrePryct" class="form-control form-control-lg" [(ngModel)]="proyect.nombrePryct" required />
+                  <div class="invalid-feedback">Campo requerido.</div>
+		        </div>
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="descPryct">Descripción del proyecto:</label>
+                  <input type="text" id="descPryct" name="descPryct" class="form-control form-control-lg" [(ngModel)]="proyect.descPryct" required/>
+                  <div class="invalid-feedback">Campo requerido.</div>
+                </div>
+                <button class="btn btn-primary btn-lg btn-block" style="float:right" type="submit"><i class="bi bi-save"></i> Guardar cambios</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

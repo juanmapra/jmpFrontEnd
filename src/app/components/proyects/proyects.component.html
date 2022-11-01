@@ -1,0 +1,17 @@
+<div class="row">
+    <h1>Proyectos</h1>
+    <div class="col-lg-12">
+        <button class="btn btn-light" routerLink="/newproyect/" *ngIf="isLogged"><i class="bi bi-plus-circle"></i></button>
+    </div>
+    <div class="">
+            <body>
+                <div *ngFor="let Proyectos of proyects">
+                    <div class="col-lg-12 col-md-12"><h3> {{Proyectos.nombrePryct}}</h3>
+                        <button class="btn btn-danger" style="float: right" (click)="delete(Proyectos.id)" *ngIf="isLogged"><i class="bi bi-trash"></i></button>
+                        <button class="btn btn-success" style="float: right" routerLink="/editproyect/{{Proyectos.id}}" *ngIf="isLogged"><i class="bi bi-pencil"></i></button>
+                    </div>
+                    <div class="offset-lg-1 offset-md-1">{{Proyectos.descPryct}}</div>
+                </div>
+            </body>
+    </div>
+</div>

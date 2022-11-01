@@ -1,0 +1,69 @@
+<!--<div class="container" *ngIf="persona">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="persona.nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" name="apellido" [(ngModel)]="persona.apellido" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcion">Descripcion</label>
+                    <input type="text" class="form-control" id="descripcion" name="descripcion" [(ngModel)]="persona.descripcion" required>
+                </div>
+                <div class="form-group">
+                    <label for="img">Cargar imagen</label>
+                    <input type="file" class="form-control" id="img" name="img" [(ngModel)]="persona.img" (change)="uploadImage($event)" accept=".jpg, .jpeg, .png" required>
+                </div>
+                <div class="imagen">
+                    <img [src]="ImageService.url" width="200px">
+                </div>                
+                <input type="image" src="../../../assets/saveico.png" alt="Submit Form"/>
+            </form>
+        </div>
+    </div>
+</div>-->
+
+<div class="logo">
+    <a href="https://www.argentina.gob.ar/economia/conocimiento/argentina-programa" target=”_blank” ><img src="../../../assets/logoap.png" id="logoap"></a>
+    <a href="" class="btn btn-outline-light" id="home"><i class="bi bi-house-fill"></i></a>
+</div>
+
+<section class="vh-100">
+    <div class="container py-5 h-100" *ngIf="persona">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="card shadow-2-strong" style="border-radius: 1rem;">
+            <div class="card-body p-5">
+  
+              <form #F="ngForm" (ngSubmit)="onUpdate()" novalidate>
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" class="form-control form-control-lg" [(ngModel)]="persona.nombre" required />
+		        </div>
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" class="form-control form-control-lg" [(ngModel)]="persona.apellido" required />
+                </div>
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="descripcion">Descripción:</label>
+                    <input type="text" id="descripcion" name="descripcion" class="form-control form-control-lg" [(ngModel)]="persona.descripcion" required/>
+                </div>
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="img">Imagen de perfil:</label>
+                    <input type="file" id="img" name="img" class="form-control form-control-lg" [(ngModel)]="persona.img" (change)="uploadImage($event)" accept=".jpg, .jpeg, .png" required/>
+                </div>
+                <div class="imagen">
+                    <img [src]="ImageService.url" width="200px">
+                </div>               
+                <button class="btn btn-primary btn-lg btn-block" style="float:right" type="submit"><i class="bi bi-save"></i> Guardar cambios</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

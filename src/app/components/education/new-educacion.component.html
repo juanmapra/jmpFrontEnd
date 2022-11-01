@@ -1,0 +1,47 @@
+<!--<div class="container">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombreExp">Nombre de la institucion</label>
+                    <input type="text" class="form-control" id="nombreExp" name="nombreEdu" [(ngModel)]="nombreEdu" required>
+                </div>
+                <div class="form-group">
+                    <label for="nombreExp">Descripcion de los estudios</label>
+                    <input type="text" class="form-control" id="descripcionExp" name="descripcionEdu" [(ngModel)]="descripcionEdu" required>
+                </div>
+                <input type="image" src="../../../assets/saveico.png" alt="Submit Form"/>
+            </form>
+        </div>
+    </div>
+</div> -->
+<div class="logo">
+    <a href="https://www.argentina.gob.ar/economia/conocimiento/argentina-programa" target=”_blank” ><img src="../../../assets/logoap.png" id="logoap"></a>
+    <a href="" class="btn btn-outline-light" id="home"><i class="bi bi-house-fill"></i></a>
+</div>
+<section class="vh-100">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="card shadow-2-strong" style="border-radius: 1rem;">
+            <div class="card-body p-5">
+  
+              <form #F="ngForm" (ngSubmit)="onCreate()" validate>
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="nombreEdu">Nombre de la institución:</label>
+                  <input type="text" id="nombreEdu" name="nombreEdu" class="form-control form-control-lg" [(ngModel)]="nombreEdu" required/>
+                  <div class="invalid-feedback">Campo requerido.</div>
+		        </div>
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="nombreUsuario">Descripción de los estudios:</label>
+                  <input type="text" id="descripcionEdu" name="descripcionEdu" class="form-control form-control-lg" [(ngModel)]="descripcionEdu" required/>
+                  <div class="invalid-feedback">Campo requerido.</div>
+                </div>
+                <button class="btn btn-primary btn-lg btn-block" style="float:right" type="submit"><i class="bi bi-plus-circle"></i> Crear</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

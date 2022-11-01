@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="container">
+        <div class="logo">
+            <a href="https://www.argentina.gob.ar/economia/conocimiento/argentina-programa" target=”_blank” ><img src="../../../assets/logoap.png" id="logoap"></a>
+        </div>
+<div>
+  <a href="https://www.linkedin.com/in/juanmapra"><img src="../../../assets/logolinkedin.png" target=”_blank” id="linkedin" alt=""></a>
+  <a href="https://github.com/juanmapra"><img src="../../../assets/logogithub.png" id="github" target=”_blank” alt=""></a>
+  <button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!IsLogged"><i class="bi bi-door-closed"></i>INGRESO</button>
+  <button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="IsLogged"><i class="bi bi-door-open"></i>CERRAR SESION</button>
+    </div>
+  </div>
+</div>
